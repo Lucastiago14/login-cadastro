@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO DE CADASTRO</title>
+    <link rel="stylesheet" href="design-formulario.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Cadastro</h1>
+        <form action="processa_cadastro.php" method="post">
+            <input type="text" name="nome" placeholder="Nome Completo" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="tel" name="telefone" placeholder="Telefone" required>
+            
+            <label>Sexo:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="sexo" value="masculino" required> Masculino</label>
+                <label><input type="radio" name="sexo" value="feminino" required> Feminino</label>
+                <label><input type="radio" name="sexo" value="outro" required> Outro</label>
+            </div>
+        
+            <label>Data de Nascimento:</label>
+            <input type="date" name="data_nascimento" required>
+        
+            <input type="text" name="cidade" placeholder="Cidade" required>
+        
+            <select name="estado" required>
+                <option value="">Selecione o Estado</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="BA">Bahia</option>
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PE">Pernambuco</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="DF">Distrito Federal</option>
+            </select>
+        
+            <input type="text" name="endereco" placeholder="Endereço" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+        
+            <button type="submit">ENVIAR</button>
+        </form>
+        
+        <p>Já tem uma conta? <a href="tela-de-login.html">Faça login</a></p>
+    </div>
+</body>
+
+</html>
+
+           
